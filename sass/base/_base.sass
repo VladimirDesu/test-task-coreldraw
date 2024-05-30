@@ -1,0 +1,58 @@
+body
+  @include fRegular
+  color: $text-color
+  background-color: $bg-color
+  font-size: 22px
+  line-height: 1.4
+
+a 
+  color: $text-color
+
+.container
+  margin: 0 auto
+  padding: 0 15px
+  max-width: 1450px
+
+.btn
+  padding: 15px 24px
+  font-size: 17px
+  @include fMedium
+  background-color: $accent-color
+  border-radius: 40px
+  transition: box-shadow 0.2s ease-in
+  &:hover
+    box-shadow: 4px 4px 20px 0px rgba(223, 80, 23, 0.8), 4px 4px 6px 0px rgba(255, 255, 255, 0.5) inset
+
+.title-1
+  @include fMedium
+  font-size: 50px
+  text-transform: uppercase
+
+.visually-hidden 
+  height: 1px
+  width: 1px
+  overflow: hidden
+  
+  position: absolute
+
+  clip: rect(1px 1px 1px 1px)
+  clip: rect(1px, 1px, 1px, 1px)
+  clip-path: inset(50%)
+
+  white-space: nowrap
+
+.mb-40px 
+  margin-bottom: 40px
+
+.layout
+  display: grid
+  grid-template-columns: 1180px 220px
+  gap: 20px
+
+.main
+  padding-top: 100px
+
+.footer 
+  padding-top: 88px
+  padding-bottom: 80px
+  grid-column-start: span 2

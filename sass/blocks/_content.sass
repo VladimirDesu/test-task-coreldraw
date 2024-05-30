@@ -1,0 +1,52 @@
+.content
+  font-size: 22px
+  grid-column-start: 1
+  grid-column-end: 2
+  &-panel
+    padding: 40px
+    background: $main-gradient
+    border-radius: 30px
+  &-boxs
+    display: flex
+    flex-direction: column
+    margin-top: 60px
+    gap: 40px
+  &-box
+    display: grid
+    grid-template-columns: 1fr 9fr
+    &__content
+      display: flex
+      flex-direction: column
+      gap: 35px
+    &__number
+      align-self: flex-start
+      @include fBold
+      font-size: 183px
+      line-height: 0.7
+      background: $number-gradient
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+    &__imgs
+      max-width: 885px
+      display: grid
+      grid-template-columns: repeat(auto-fit, minmax(268px, 1fr))
+      gap: 20px
+    &__img-box
+      height: 62px
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: 10px 40px
+      background-color: white
+      border-radius: 12px
+      box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25)
+    &__img-text
+      text-align: right
+      font-size: 18px
+      grid-column-start: span 3
+  &__img
+    text-align: center
+.content-center
+  align-items: center
+
+    
